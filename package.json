@@ -6,7 +6,11 @@
     "dev": "cross-env dotenv -- turbo run dev --env-mode=loose",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "deps": "sherif"
+    "deps": "sherif",
+    "db:generate": "cross-env dotenv -- turbo run generate --env-mode=loose",
+    "db:migrate": "cross-env dotenv -- turbo run migrate --env-mode=loose",
+    "db:push": "cross-env dotenv -- turbo run push --env-mode=loose",
+    "db:studio": "cross-env dotenv -- turbo run studio --env-mode=loose"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",

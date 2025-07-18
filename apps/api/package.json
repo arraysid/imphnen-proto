@@ -4,7 +4,10 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
+    "@elysiajs/cors": "^1.3.3",
+    "@elysiajs/swagger": "^1.3.0",
     "@packages/env": "workspace:*",
+    "@packages/auth": "workspace:*",
     "elysia": "latest"
   },
   "devDependencies": {

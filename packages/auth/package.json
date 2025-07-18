@@ -1,0 +1,11 @@
+{
+  "name": "@packages/auth",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@packages/db": "workspace:*",
+    "@packages/env": "workspace:*",
+    "better-auth": "^1.2.12"
+  }
+}
