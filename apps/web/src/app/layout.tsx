@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | IMPHNEN",
-    default: "IMPHNEN - Ingin Menjadi Programmer Handal Namun Enggan Ngoding",
+    template: "IMPHNEN | %s",
+    default: "IMPHNEN | Ingin Menjadi Programmer Handal Namun Enggan Ngoding",
   },
   description: "Ingin Menjadi Programmer Handal Namun Enggan Ngoding",
 };

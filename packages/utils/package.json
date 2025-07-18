@@ -2,9 +2,11 @@
   "name": "@packages/utils",
   "exports": {
     "./tailwind": "./src/tailwind/index.ts",
-    "./tanstack-query": "./src/tanstack-query/index.ts"
+    "./tanstack-query": "./src/tanstack-query/index.ts",
+    "./navigation": "./src/navigation/index.ts"
   },
   "dependencies": {
+    "next": "15.4.1",
     "@tanstack/react-query": "^5.83.0",
     "clsx": "^2.1.1",
     "tailwind-merge": "^3.3.1"
