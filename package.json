@@ -1,0 +1,22 @@
+{
+  "name": "imphnen-proto",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "deps": "sherif"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "prettier": "^3.6.2",
+    "sherif": "^1.6.1",
+    "turbo": "^2.5.5",
+    "typescript": "5.8.3"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}

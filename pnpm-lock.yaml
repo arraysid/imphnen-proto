@@ -1,0 +1,216 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      cross-env:
+        specifier: ^7.0.3
+        version: 7.0.3
+      prettier:
+        specifier: ^3.6.2
+        version: 3.6.2
+      sherif:
+        specifier: ^1.6.1
+        version: 1.6.1
+      turbo:
+        specifier: ^2.5.5
+        version: 2.5.5
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
+packages:
+
+  cross-env@7.0.3:
+    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==}
+    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
+    hasBin: true
+
+  cross-spawn@7.0.6:
+    resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
+    engines: {node: '>= 8'}
+
+  isexe@2.0.0:
+    resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
+
+  path-key@3.1.1:
+    resolution: {integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==}
+    engines: {node: '>=8'}
+
+  prettier@3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
+    engines: {node: '>=14'}
+
+  shebang-command@2.0.0:
+    resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
+    engines: {node: '>=8'}
+
+  shebang-regex@3.0.0:
+    resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
+    engines: {node: '>=8'}
+
+  sherif-darwin-arm64@1.6.1:
+    resolution: {integrity: sha512-J15oBJcrnCAZ0rQE8WbMShYw3204A18akCH6C/uZrILTwX/vZyJIqi7lAt5L00LzsadA3HcyQqVjLNNCvuihoQ==}
+    cpu: [arm64]
+    os: [darwin]
+
+  sherif-darwin-x64@1.6.1:
+    resolution: {integrity: sha512-oLA/GtvUasi+qCl35LczOhQ4g/xY2mxE5/eiTYQGT3Ow7FKLscnkE6v5l28bgkFeR/uke0AgZ/CgHhozAf0ulg==}
+    cpu: [x64]
+    os: [darwin]
+
+  sherif-linux-arm64@1.6.1:
+    resolution: {integrity: sha512-OoltlucT7v9BZdkYZRbs1QU0DYMCQ5qgpMqQdMW1Rq3w3amr7+oEiV9NHntD83udOo8xRxKq0uPXfNYu+VptJw==}
+    cpu: [arm64]
+    os: [linux]
+
+  sherif-linux-x64@1.6.1:
+    resolution: {integrity: sha512-qyDyYqpi3ABGkRuCnjnxN3OMT8DxMiiLzhS9p9xC05Y9nr5hjkxvqP4DdJ4e5opm4E7vzRAS7VQoZ6m7h6tsgQ==}
+    cpu: [x64]
+    os: [linux]
+
+  sherif-windows-arm64@1.6.1:
+    resolution: {integrity: sha512-wAbCiqP//lo7bZUlHmZUV3/sGjnJxo6QB5/fqhz5/GUeWh4CTyvlSacJKZxLnXnzpiUSeFnWutquWnHkRov5Ug==}
+    cpu: [arm64]
+    os: [win32]
+
+  sherif-windows-x64@1.6.1:
+    resolution: {integrity: sha512-2r0qMxZGCMO2aq8Hlq7npxtAsUFVDsEFtUM/6dFo1npa/jHe2mbU7ii/Ymy0bloSa/qw/azrSfRV6GLU7Gjtxg==}
+    cpu: [x64]
+    os: [win32]
+
+  sherif@1.6.1:
+    resolution: {integrity: sha512-ZnwyTnmXoUOPClkOA37JWIyFxCoozMGHmhk/p7XbTREI554XXCnBAn3BMX8UsqkhSzQ9eNQsq4U+jnImEIppsQ==}
+    hasBin: true
+
+  turbo-darwin-64@2.5.5:
+    resolution: {integrity: sha512-RYnTz49u4F5tDD2SUwwtlynABNBAfbyT2uU/brJcyh5k6lDLyNfYKdKmqd3K2ls4AaiALWrFKVSBsiVwhdFNzQ==}
+    cpu: [x64]
+    os: [darwin]
+
+  turbo-darwin-arm64@2.5.5:
+    resolution: {integrity: sha512-Tk+ZeSNdBobZiMw9aFypQt0DlLsWSFWu1ymqsAdJLuPoAH05qCfYtRxE1pJuYHcJB5pqI+/HOxtJoQ40726Btw==}
+    cpu: [arm64]
+    os: [darwin]
+
+  turbo-linux-64@2.5.5:
+    resolution: {integrity: sha512-2/XvMGykD7VgsvWesZZYIIVXMlgBcQy+ZAryjugoTcvJv8TZzSU/B1nShcA7IAjZ0q7OsZ45uP2cOb8EgKT30w==}
+    cpu: [x64]
+    os: [linux]
+
+  turbo-linux-arm64@2.5.5:
+    resolution: {integrity: sha512-DW+8CjCjybu0d7TFm9dovTTVg1VRnlkZ1rceO4zqsaLrit3DgHnN4to4uwyuf9s2V/BwS3IYcRy+HG9BL596Iw==}
+    cpu: [arm64]
+    os: [linux]
+
+  turbo-windows-64@2.5.5:
+    resolution: {integrity: sha512-q5p1BOy8ChtSZfULuF1BhFMYIx6bevXu4fJ+TE/hyNfyHJIfjl90Z6jWdqAlyaFLmn99X/uw+7d6T/Y/dr5JwQ==}
+    cpu: [x64]
+    os: [win32]
+
+  turbo-windows-arm64@2.5.5:
+    resolution: {integrity: sha512-AXbF1KmpHUq3PKQwddMGoKMYhHsy5t1YBQO8HZ04HLMR0rWv9adYlQ8kaeQJTko1Ay1anOBFTqaxfVOOsu7+1Q==}
+    cpu: [arm64]
+    os: [win32]
+
+  turbo@2.5.5:
+    resolution: {integrity: sha512-eZ7wI6KjtT1eBqCnh2JPXWNUAxtoxxfi6VdBdZFvil0ychCOTxbm7YLRBi1JSt7U3c+u3CLxpoPxLdvr/Npr3A==}
+    hasBin: true
+
+  typescript@5.8.3:
+    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
+    engines: {node: '>=14.17'}
+
+  which@2.0.2:
+    resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
+    engines: {node: '>= 8'}
+    hasBin: true
+
+snapshots:
+
+  cross-env@7.0.3:
+    dependencies:
+      cross-spawn: 7.0.6
+
+  cross-spawn@7.0.6:
+    dependencies:
+      path-key: 3.1.1
+      shebang-command: 2.0.0
+      which: 2.0.2
+
+  isexe@2.0.0: {}
+
+  path-key@3.1.1: {}
+
+  prettier@3.6.2: {}
+
+  shebang-command@2.0.0:
+    dependencies:
+      shebang-regex: 3.0.0
+
+  shebang-regex@3.0.0: {}
+
+  sherif-darwin-arm64@1.6.1:
+    optional: true
+
+  sherif-darwin-x64@1.6.1:
+    optional: true
+
+  sherif-linux-arm64@1.6.1:
+    optional: true
+
+  sherif-linux-x64@1.6.1:
+    optional: true
+
+  sherif-windows-arm64@1.6.1:
+    optional: true
+
+  sherif-windows-x64@1.6.1:
+    optional: true
+
+  sherif@1.6.1:
+    optionalDependencies:
+      sherif-darwin-arm64: 1.6.1
+      sherif-darwin-x64: 1.6.1
+      sherif-linux-arm64: 1.6.1
+      sherif-linux-x64: 1.6.1
+      sherif-windows-arm64: 1.6.1
+      sherif-windows-x64: 1.6.1
+
+  turbo-darwin-64@2.5.5:
+    optional: true
+
+  turbo-darwin-arm64@2.5.5:
+    optional: true
+
+  turbo-linux-64@2.5.5:
+    optional: true
+
+  turbo-linux-arm64@2.5.5:
+    optional: true
+
+  turbo-windows-64@2.5.5:
+    optional: true
+
+  turbo-windows-arm64@2.5.5:
+    optional: true
+
+  turbo@2.5.5:
+    optionalDependencies:
+      turbo-darwin-64: 2.5.5
+      turbo-darwin-arm64: 2.5.5
+      turbo-linux-64: 2.5.5
+      turbo-linux-arm64: 2.5.5
+      turbo-windows-64: 2.5.5
+      turbo-windows-arm64: 2.5.5
+
+  typescript@5.8.3: {}
+
+  which@2.0.2:
+    dependencies:
+      isexe: 2.0.0
