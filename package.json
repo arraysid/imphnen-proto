@@ -2,8 +2,9 @@
   "name": "imphnen-proto",
   "private": true,
   "scripts": {
-    "build": "cross-env dotenv -- turbo run build",
     "dev": "cross-env dotenv -- turbo run dev --env-mode=loose",
+    "build": "cross-env dotenv -- turbo run build",
+    "start": "cross-env dotenv -- turbo run start --env-mode=loose",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "deps": "sherif",
