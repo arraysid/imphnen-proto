@@ -8,7 +8,7 @@ import { auth } from "./routes/auth";
 const app = new Elysia()
   .use(
     cors({
-      origin: [String(process.env.APP_URL)],
+      origin: [process.env.NEXT_PUBLIC_APP_URL!],
       methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
       credentials: true,
       allowedHeaders: ["Content-Type", "Authorization"],

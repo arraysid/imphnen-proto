@@ -11,7 +11,7 @@ export const authInstance = betterAuth({
     schema: authSchema,
   }),
   basePath: "/auth",
-  trustedOrigins: [env.APP_URL],
+  trustedOrigins: [process.env.NEXT_PUBLIC_APP_URL!],
   secret: env.AUTH_SECRET,
   emailAndPassword: {
     enabled: true,

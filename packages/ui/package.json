@@ -1,18 +1,25 @@
 {
   "name": "@packages/ui",
   "exports": {
-    "./button": "./src/components/button.tsx"
+    "./button": "./src/components/button.tsx",
+    "./forms": "./src/features/forms/index.ts",
+    "./layouts": "./src/layouts/index.ts",
+    "./pages": "./src/pages/index.ts"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.1.1",
     "@packages/utils": "workspace:*",
     "@radix-ui/react-slot": "^1.2.3",
+    "@tanstack/react-query": "^5.83.0",
     "class-variance-authority": "^0.7.1",
-    "tw-animate-css": "^1.3.5"
+    "react-icons": "^5.5.0",
+    "tw-animate-css": "^1.3.5",
+    "zod": "^4.0.5"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
     "tailwindcss": "^4"
   }
 }

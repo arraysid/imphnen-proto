@@ -1,8 +1,12 @@
 import "@/styles/globals.css";
+import { TanstackQueryProvider } from "@packages/utils/tanstack-query";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "IMPHNEN ",
+  title: {
+    template: "%s | IMPHNEN",
+    default: "IMPHNEN - Ingin Menjadi Programmer Handal Namun Enggan Ngoding",
+  },
   description: "Ingin Menjadi Programmer Handal Namun Enggan Ngoding",
 };
 
@@ -13,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <TanstackQueryProvider>{children}</TanstackQueryProvider>
+      </body>
     </html>
   );
 }
