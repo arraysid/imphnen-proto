@@ -4,30 +4,28 @@ export function AuthLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex min-h-screen">
-      {/* Left side - Image */}
-      <div className="relative flex-1">
-        <div className="absolute inset-0">
-          <img
-            src="/assets/auth-images.webp"
-            className="pointer-events-none h-full w-full object-cover object-center select-none dark:grayscale"
-          />
-        </div>
-
-        <div className="absolute top-64 left-1/3 z-10 -translate-x-1/2">
-          <img
-            src="/logos/main.svg"
-            className="pointer-events-none h-[240px] w-auto select-none dark:grayscale"
-          />
-        </div>
+    <div className="relative flex min-h-screen overflow-hidden flex-col md:flex-row">
+      {/* Left side - Image and Logo (hidden on mobile) */}
+      <div className="relative hidden flex-1 bg-foreground/5 md:flex">
+        <img
+          src="/assets/auth-images.webp"
+          alt="bg"
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 max-w-full"
+        />
+        <img
+          src="/logos/main.svg"
+          alt="logo"
+          className="pointer-events-none select-none h-[240px] w-auto absolute top-28 left-1/2 -translate-x-1/2"
+        />
       </div>
 
-      {/* Right side  */}
-      <div className="flex flex-1 items-center justify-center p-8">
-        {children}
+      {/* Right side - Content and Mascot */}
+      <div className="relative flex flex-1 items-center justify-center p-8">
+        <div className="w-full max-w-md">{children}</div>
         <img
-          src="/mascot.webp"
-          className="absolute right-0 bottom-0 w-64 scale-x-[-1] transform dark:grayscale"
+          src="/mascots/pointing.webp"
+          alt="mascot"
+          className="absolute right-0 bottom-0 w-64 transform scale-x-[-1]"
         />
       </div>
     </div>

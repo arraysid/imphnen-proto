@@ -11,7 +11,7 @@ import {
 } from "@/components/form";
 import { Input } from "@/components/input";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useMutation } from "@tanstack/react-query";
+import { rpc } from "@packages/utils/openapi";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuEye, LuEyeOff } from "react-icons/lu";
@@ -45,23 +45,22 @@ export function SignUpForm() {
     },
   });
 
-  const mutation = useMutation({
-    mutationFn: async (data: SignUpData) => {
+  const mutation = rpc.useMutation("post", "v1/auth/sign-up/email", {
+    onMutate: () => {
+      console.log("mutating...");
+    },
+    onError: (err) => {
+      console.log(err);
+    },
+    onSettled: (data) => {
       console.log(data);
-    },
-    onSuccess: () => {
-      // redirect or notify success
-    },
-    onError: (e) => {
-      form.setError("email", {
-        type: "server",
-        message: "Signup gagal: " + (e as Error).message,
-      });
     },
   });
 
   function onSubmit(data: SignUpData) {
-    mutation.mutate(data);
+    mutation.mutate({
+      body: data,
+    });
   }
 
   return (
