@@ -2,10 +2,12 @@ import createFetchClient from "openapi-fetch";
 import createClient from "openapi-react-query";
 import type { paths } from "./paths.gen";
 
-const fetchClient = createFetchClient<paths>({
+export const fetcher = createFetchClient<paths>({
   baseUrl: getAPIURL(),
   credentials: "include",
 });
+
+export const rpc = createClient(fetcher);
 
 function getAPIURL() {
   // its weird from this library to fix need to use "//" in the end
@@ -16,5 +18,3 @@ function getAPIURL() {
 function stripTrailingSlash(url: string): string {
   return url.replace(/\/+$/, "");
 }
-
-export const rpc = createClient(fetchClient);
